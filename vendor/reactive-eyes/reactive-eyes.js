@@ -94,21 +94,19 @@
 					
 					// calculate the scaled range, scale 0 to 500 into 8 to 18
 					var x = dist * (pupilWidth[1] - pupilWidth[0]) / 500 + pupilWidth[0];
+					
 					var y = dist * (pupilHeight[1] - pupilHeight[0]) / 500 + pupilHeight[0];
 					
-					var boundsXoffset = (iris.clientWidth - x);
-					var boundsYoffset = (iris.clientHeight - y);
-
-					pupil.style.width = boundsXoffset+'px';
-					pupil.style.height = boundsYoffset+'px';	
+					pupil.style.width = x+'px';
+					pupil.style.height = y+'px';	
 
 					// now update the iris etc
 					var eyeBounds = eye.getBoundingClientRect();	
-					var x = (focusX - (eyeBounds.left + eye.clientWidth / 2)) / 2;
-					var y = (focusY - (eyeBounds.top + eye.clientHeight / 2)) / 2;		
-
-					boundsXoffset = (iris.clientWidth - boundsXoffset) / 2;
-					boundsYoffset = (iris.clientHeight - boundsYoffset) / 2;
+					var boundsXoffset = (iris.clientWidth - x) / 2;
+					var boundsYoffset = (iris.clientHeight - y) / 2;					
+					
+					x = (focusX - (eyeBounds.left + eye.clientWidth / 2)) / 2;
+					y = (focusY - (eyeBounds.top + eye.clientHeight / 2)) / 2;		
 					
 					var boundx = (eye.clientWidth / 2 - iris.offsetWidth / 2) + (boundsXoffset / 1.80);
 					var boundy = (eye.clientHeight / 2 - + iris.offsetHeight / 2) + (boundsYoffset / 1.80);
