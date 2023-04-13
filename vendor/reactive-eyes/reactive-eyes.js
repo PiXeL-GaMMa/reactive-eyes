@@ -94,7 +94,6 @@
 					
 					// calculate the scaled range, scale 0 to 500 into 8 to 18
 					var x = dist * (pupilWidth[1] - pupilWidth[0]) / 500 + pupilWidth[0];
-					
 					var y = dist * (pupilHeight[1] - pupilHeight[0]) / 500 + pupilHeight[0];
 					
 					pupil.style.width = x+'px';
