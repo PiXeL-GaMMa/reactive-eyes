@@ -40,6 +40,7 @@
 	
 	--iris-width:75px; 			/*calc(var(--eye-width) / 2px);*/
 	--iris-height:75px; 		/*calc(var(--eye-width) / 2px);	*/
+	--iris-color: linear-gradient(90deg, #764e31 0%, #a47a55 50%, #c1a37f 100%);
 	
 	--pupil-width-min:15px; 	/*calc(var(--iris-width) * 0.2px);*/
 	--pupil-height-min:15px; 	/*calc(var(--iris-height) * 0.2px);*/
@@ -83,7 +84,7 @@
 	border-radius:50%;
 	box-sizing: border-box;
 	transition:all 0.5s linear;
-	background: linear-gradient(90deg, #764e31 0%, #a47a55 50%, #c1a37f 100%);
+	background: var(--iris-color);
 	box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.5);
 }
 
