@@ -1,6 +1,7 @@
 # Reactive Eyes
 Javascript for creating eyes that follow mouse movement and look around when no mouse activity.
 
+/*
 REACTIVE EYES
 
 MIT License with Attribution
@@ -29,3 +30,4 @@ THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES, OR
 OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, 
 ARISING FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR 
 OTHER DEALINGS IN THE SOFTWARE.
+*/
