@@ -1,0 +1,36 @@
+/*
+	! *****************************************************************************
+	
+	REACTIVE EYES
+	
+	MIT License with Attribution
+
+	Copyright (c) Colin J.D. Stewart. All rights reserved.
+	
+	The following license applies to this software and associated documentation 
+	files (the "Software"):
+
+	Permission is hereby granted, free of charge, to any person obtaining a copy 
+	of this Software, to use, copy, modify, merge, publish, distribute, sublicense, 
+	and/or sell copies of the Software, subject to the following conditions:
+
+	1. 	The above copyright notice and this permission notice shall be included 
+		in all copies or substantial portions of the Software.
+		
+	2. 	If you use this Software in a product or service, an attribution in the 
+		form of a copyright notice, a link to the license, and a disclaimer of 
+		warranties (and any other similar attribution) is required for any 
+		distribution, reproduction, or derivative works of the Software.
+
+	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
+	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL 
+	THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES, OR 
+	OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, 
+	ARISING FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR 
+	OTHER DEALINGS IN THE SOFTWARE.
+	
+	! ***************************************************************************** 
+*/
+
+.eyes,.eyes .eye{justify-content:center;display:flex}.eyes{--eye-width:150px;--eye-height:90px;--iris-width:75px;--iris-height:75px;--pupil-width-min:15px;--pupil-height-min:15px;--pupil-width-max:60px;--pupil-height-max:60px;width:100%;align-items:center;flex-direction:row;column-gap:100px}.eyes .eye{width:var(--eye-width);height:var(--eye-height);border-radius:100%;background-color:#fff;align-items:center;position:relative;overflow:hidden;box-shadow:0 0 15px rgba(0,0,0,.3);animation:6s linear infinite eyeblink}.eyes .eye .iris{display:flex;justify-content:center;align-items:center;position:absolute;width:var(--iris-width);height:var(--iris-height);border-radius:50%;box-sizing:border-box;transition:.5s linear;background:linear-gradient(90deg,#764e31 0,#a47a55 50%,#c1a37f 100%);box-shadow:inset 0 0 8px rgba(0,0,0,.5)}.eyes .eye .iris .pupil{position:relative;width:var(--pupil-width-min);height:var(--pupil-height-min);background:#000;border-radius:50%;transition:1s}@keyframes eyeblink{79%,81%{height:var(--eye-height);margin-top:0}80%{height:0;margin-top:calc(var(--eye-height)/ 2px)}}
