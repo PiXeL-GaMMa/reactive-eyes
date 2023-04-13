@@ -36,7 +36,7 @@
 (function() {  
 	const alleyes = document.querySelectorAll('.eye');
 	
-	if (alleyes.length > 0) {	// hmm .... not working as expected
+	if (alleyes.length > 0) {
 		var focusX, focusY;
 		var rFocusTimeout;
 	
